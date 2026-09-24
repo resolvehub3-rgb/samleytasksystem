@@ -1,0 +1,6 @@
+{
+  "name": "SyncEdge Pro - Real-Time SaaS Project Management",
+  "description": "Enterprise-grade real-time SaaS project management platform for software teams, client projects, Kanban boards, finances, and team collaboration powered by Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

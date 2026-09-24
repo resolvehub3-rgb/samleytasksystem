@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-green: #0B5D3B;
+    --brand-green-hover: #08492E;
+    --brand-green-light: #EBF7F0;
+    --brand-yellow: #D9A400;
+    --brand-yellow-hover: #B88B00;
+    --brand-yellow-light: #FDF9E8;
+  }
+
+  body {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom scrollbar for modern SaaS feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(11, 93, 59, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(11, 93, 59, 0.4);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
