@@ -1,18 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --brand-green: #0B5D3B;
-    --brand-green-hover: #08492E;
-    --brand-green-light: #EBF7F0;
-    --brand-yellow: #D9A400;
-    --brand-yellow-hover: #B88B00;
-    --brand-yellow-light: #FDF9E8;
-  }
+@theme {
+  --font-sans: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
 
-  body {
-    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  }
+:root {
+  --brand-green: #0B5D3B;
+  --brand-green-hover: #08492E;
+  --brand-green-light: #EBF7F0;
+  --brand-yellow: #D9A400;
+  --brand-yellow-hover: #B88B00;
+  --brand-yellow-light: #FDF9E8;
+}
+
+/* Ensure Montserrat is strictly the default font family for all elements */
+html,
+body,
+button,
+input,
+optgroup,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a,
+label {
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
 }
 
 /* Custom scrollbar for modern SaaS feel */
